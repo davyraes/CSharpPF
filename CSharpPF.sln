@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "planten", "planten\planten.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter", "Twitter\Twitter.csproj", "{1EED6D5D-ABB7-4839-AD42-B357EF480A28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PastaPizzaNet", "PastaPizzaNet\PastaPizzaNet.csproj", "{63F04DB8-B8DF-4AD5-A1A5-B54790C76C1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{1EED6D5D-ABB7-4839-AD42-B357EF480A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EED6D5D-ABB7-4839-AD42-B357EF480A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EED6D5D-ABB7-4839-AD42-B357EF480A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F04DB8-B8DF-4AD5-A1A5-B54790C76C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F04DB8-B8DF-4AD5-A1A5-B54790C76C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F04DB8-B8DF-4AD5-A1A5-B54790C76C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F04DB8-B8DF-4AD5-A1A5-B54790C76C1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
