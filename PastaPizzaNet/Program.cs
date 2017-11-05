@@ -16,6 +16,7 @@ namespace PastaPizzaNet
             Frisdrank.Prijs = 2m;
             Warmedrank.Prijs = 2.5m;
             //menu
+           
             Pizza pizzaMargherita = new Pizza("Pizza Margherita", 8m, new List<string> { "Tomatensaus", "Mozzarella" });
             Pizza pizzaNapoli = new Pizza("Pizza Napoli", 10m, new List<string> { "Tomatensaus", "Mozzarella", "Ansjovis", "Kappers", "Olijven" });
             Pasta lasagne = new Pasta("Lasagne", 15m);

@@ -7,7 +7,7 @@ using System.IO;
 
 namespace PastaPizzaNet
 {
-    class Bestelling:IBedrag
+    public class Bestelling:IBedrag
     {
         const string bestand = @"c:\data\bestellingen.txt"; 
         public Bestelling(Klant klant,int aantal =1)
@@ -83,44 +83,47 @@ namespace PastaPizzaNet
 
             return rekening*Aantal;
         }
-        public void BestellingNaarBestand()
-        {
-            try
-            {
-                using (var schrijver = new StreamWriter(bestand, true))
-                {
-                    var regel = new StringBuilder();
-                    regel.Append(Klant.KlantId);
-                    if (BesteldGerecht != null)
-                    {                        
-                        regel.Append($"#{BesteldGerecht.Gerecht.Naam}-{BesteldGerecht.Grootte}-{BesteldGerecht.Extras.Count}");
-                        if (BesteldGerecht.Extras.Count!=0)
-                            foreach (var extra in BesteldGerecht.Extras)
-                                regel.Append($"-{extra}");
-                    }
-                    if (this.Drank is Frisdrank)
-                        regel.Append($"#F-{Drank.Naam}");
-                    else if (this.Drank is Warmedrank)
-                        regel.Append($"#W-{Drank.Naam}");
-                    if (this.Dessert != null)
-                        regel.Append($"{Dessert.Naam}");
-                    regel.Append($"#{Aantal}");
-                    schrijver.WriteLine(regel);
+        //public void BestellingNaarBestand()
+        //{
+        //    try
+        //    {
+        //        using (var schrijver = new StreamWriter(bestand, true))
+        //        {
+        //            var regel = new StringBuilder();
+        //            regel.Append(Klant.KlantId);
+        //            if (BesteldGerecht != null)
+        //            {                        
+        //                regel.Append($"#{BesteldGerecht.Gerecht.Naam}-{BesteldGerecht.Grootte}-{BesteldGerecht.Extras.Count}");
+        //                if (BesteldGerecht.Extras.Count!=0)
+        //                    foreach (var extra in BesteldGerecht.Extras)
+        //                        regel.Append($"-{extra}");
+        //            }
+        //            if (this.Drank is Frisdrank)
+        //                regel.Append($"#F-{Drank.Naam}");
+        //            else if (this.Drank is Warmedrank)
+        //                regel.Append($"#W-{Drank.Naam}");
+        //            if (this.Dessert != null)
+        //                regel.Append($"{Dessert.Naam}");
+        //            regel.Append($"#{Aantal}");
+        //            schrijver.WriteLine(regel);
 
-                }
-            }
-            catch(IOException)
-            {
-                throw new Exception("bestand niet gevonden");
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            } 
-        }
-        public void BestandNaarBestelling()
-        {
-
-        }
+        //        }
+        //    }
+        //    catch(IOException)
+        //    {
+        //        throw new Exception("bestand niet gevonden");
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    } 
+        //}
+        //public void BestandNaarBestelling()
+        //{
+        //    try
+        //    {
+        //        using (var lezer = new StreamReader(bestand));
+        //    }
+        //}
     }
 }

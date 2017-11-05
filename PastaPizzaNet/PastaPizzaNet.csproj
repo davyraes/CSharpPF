@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bestanden.cs" />
     <Compile Include="BesteldGerecht.cs" />
     <Compile Include="Bestelling.cs" />
+    <Compile Include="Bestellingen.cs" />
     <Compile Include="Dessert.cs" />
     <Compile Include="Drank.cs" />
     <Compile Include="EDessert.cs" />
@@ -53,8 +55,10 @@
     <Compile Include="Frisdrank.cs" />
     <Compile Include="Gerecht.cs" />
     <Compile Include="EGrootte.cs" />
+    <Compile Include="gerechten.cs" />
     <Compile Include="IBedrag.cs" />
     <Compile Include="Klant.cs" />
+    <Compile Include="Klanten.cs" />
     <Compile Include="Pasta.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="Program.cs" />
