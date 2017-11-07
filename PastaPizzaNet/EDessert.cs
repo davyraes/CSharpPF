@@ -8,7 +8,7 @@ namespace PastaPizzaNet
 {
     namespace enums
     {
-        enum Dessert
+        public enum Dessert
         {
             Tiramisu,
             Ijs,

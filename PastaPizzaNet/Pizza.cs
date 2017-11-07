@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PastaPizzaNet
 {
-    class Pizza : Gerecht
+    public class Pizza : Gerecht
     {
         public Pizza(string naam, decimal prijs, List<string> onderdelen) : base(naam, prijs)
         {

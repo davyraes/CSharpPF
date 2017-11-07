@@ -7,7 +7,7 @@ using EDessert = PastaPizzaNet.enums.Dessert;
 
 namespace PastaPizzaNet
 {
-    class Dessert:IBedrag
+    public class Dessert:IBedrag
     {
         public Dessert(EDessert naam)
         {

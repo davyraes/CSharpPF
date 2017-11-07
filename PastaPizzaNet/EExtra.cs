@@ -11,7 +11,7 @@ namespace PastaPizzaNet
         public enum Extra
         {
             Brood,
-            kaas,
+            Kaas,
             Look
         }
     }

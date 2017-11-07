@@ -7,8 +7,12 @@ using PastaPizzaNet.enums;
 
 namespace PastaPizzaNet
 {
-    class BesteldGerecht:IBedrag
+    public class BesteldGerecht:IBedrag
     {
+        public BesteldGerecht()
+        {
+
+        }
         public BesteldGerecht(Gerecht gerecht,Grootte grootte)
         {
             this.Gerecht = gerecht;

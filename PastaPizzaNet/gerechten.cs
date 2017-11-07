@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PastaPizzaNet
 {
-    public class gerechten
+    public class gerechten 
     {
         public List<Gerecht> GerechtenLijst { get; set; }
         public void AddGerechten(Gerecht gerecht)

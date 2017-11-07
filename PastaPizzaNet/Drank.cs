@@ -9,6 +9,10 @@ namespace PastaPizzaNet
 {
     public abstract class Drank:IBedrag
     {
+        public Drank ()
+        {
+
+        }
         public Drank(Edrank naam,decimal prijs)
         {
             this.Naam = naam;

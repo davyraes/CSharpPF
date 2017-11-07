@@ -9,7 +9,11 @@ namespace PastaPizzaNet
 {
     public class Bestelling:IBedrag
     {
-        const string bestand = @"c:\data\bestellingen.txt"; 
+        const string bestand = @"c:\data\bestellingen.txt";
+        public Bestelling()
+        {
+
+        }
         public Bestelling(Klant klant,int aantal =1)
         {
             this.Klant = klant;

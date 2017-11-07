@@ -9,6 +9,10 @@ namespace PastaPizzaNet
 {
     class Frisdrank : Drank
     {
+        public Frisdrank()
+        {
+
+        }
         public Frisdrank(Edrank naam):base (naam,Frisdrank.Prijs)
         {
             this.Naam = naam;
